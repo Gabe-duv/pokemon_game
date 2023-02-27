@@ -1,19 +1,60 @@
 
-pikachu =  { # This is a dictionary. It allows you to store multiple values in a single variable. Each value is stored with a key.
-    'attack': 55, # Here the key is 'attack' and the value is 55.
+pikachu =  {
+    'name': 'pikachu',
+    'attack': 55,
     'defense': 40,
-    'hp': 35,
+    'hp': 40,
     'type': 'electric'
 }
-charmander =  {
-    'attack': 52,
-    'defense': 43,
-    'hp': 39,
-    'type': 'fire'
+ekans =  {
+    'name': 'ekans',
+    'attack': 60,
+    'defense': 35,
+    'hp': 45,
+    'type': 'psychic'
 }
 
-print (pikachu['attack']) # we can reference the value of a key by using the key in square brackets.
-
-# I would like you to create a dictionary for Squirtle, Bulbasaur and any other pokemon you like (you can make up the stats) remember, this is only practice so there's no need to make loads.
-
-# Once you have done that I would like you to write a while loop that takes input from the user and prints out the desired stats for the pokemon.
+charmander =  {
+    'name': 'charmander',
+    'attack': 52,
+    'defense': 43,
+    'hp': 40,
+    'type': 'fire'
+}
+Squirtle = { 
+    'name': 'Squirtle',
+    'attack': 47,
+    'defense': 40,
+    'hp': 45,
+    'type': 'water'
+}
+Bulbasaur = {
+    'name': 'Bulbasaur',
+    'attack': 50,
+    'defense': 55,
+    'hp': 40,
+    'type': 'grass'
+}
+eevee = {
+    'name': 'eevee',
+    'attack': 58,
+    'defense': 37,
+    'hp': 35,
+    'type': 'normal'
+}
+pokemons = [pikachu , eevee , Bulbasaur , charmander , Squirtle , ekans]
+while True:
+    print( 'Enter the name of a pokemon you wont to see the stats of(or type nothing to quit)')
+    name = input()
+    if name == '':
+        break
+    for pokemon in pokemons:
+        if pokemon['name'] == name:
+            print("attack : " + str(pokemon['attack']))
+            print("defense : " + str(pokemon['defense']))
+            print("hp : " + str(pokemon['hp']))
+            print("type : " + pokemon['type'])
+if eevee['name'] == "name: 'eevee'":
+    print("true")
+else:
+    print("false")

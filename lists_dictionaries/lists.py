@@ -13,7 +13,7 @@ print(pokemon.index('Charmander')) # This will print the index of Charmander in 
 print(pokemon)
 
 pokemon.insert(1, 'Squirtle') # This will insert Squirtle at index 1 in the list.
-
+print(pokemon)
 
 # I have created a while loop that will take the name of a pokemon and check if it is in the list.
 # I would like you to alter this while loop so that you can add pokemon to the list, remove pokemon from the list and print the list
@@ -26,4 +26,5 @@ while True:
     if name in pokemon: # This will check if the name of the pokemon is in the list.
         print('Yes, ' + name + ' is in the Pokemon list.') # This will print the name of the pokemon and the fact that it is in the list.
     else: # This will run if the name of the pokemon is not in the list.
-        print('No, ' + name + ' is not in the Pokemon list.') # This will print the name of the pokemon and the fact that it is not in the list.
+        print('No, ' + name + ' is not in the Pokemon list. adding ' + name + ' to list') # This will print the name of the pokemon and the fact that it is not in the list.
+        pokemon.append(name)
